@@ -30,6 +30,7 @@ import { AuthPage } from './pages/Auth';
 import { AdminPage } from './pages/Admin';
 import { CheckoutSuccess } from './pages/CheckoutSuccess';
 import { CheckoutCancel } from './pages/CheckoutCancel';
+import BacktestPanel from './components/BacktestPanel';
 
 interface ChecklistItem { id: number; label: string; done: boolean; }
 interface BestHourItem { time: string; value: number; }
@@ -873,6 +874,11 @@ export default function App() {
               </ResponsiveContainer>
             </div>
           </section>
+
+          {/* ===== BACKTEST PANEL ===== */}
+          <BacktestPanel />
+          {/* ========================= */}
+
         </div>
 
         <aside className="space-y-8">
